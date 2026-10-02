@@ -1,0 +1,24 @@
+# Visual Studio
+TransaccionesApp/.vs/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+
+# Rider / JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
