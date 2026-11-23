@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>69b7f165-6c10-4487-ad3c-205ff7015219</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LDCC.Helper\LDCC.Helper.csproj" />
+    <ProjectReference Include="..\LDCC.Models\LDCC.Models.csproj" />
+    <ProjectReference Include="..\LDCC.Repository\LDCC.Repository.csproj" />
+    <ProjectReference Include="..\LDCC.Services\LDCC.Services.csproj" />
+  </ItemGroup>
+
+</Project>

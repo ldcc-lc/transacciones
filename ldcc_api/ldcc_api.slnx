@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="LDCC.Api/LDCC.Api.csproj" />
+  <Project Path="LDCC.Helper/LDCC.Helper.csproj" Id="d329d9e4-5ea3-4aa2-8db6-9c952ccd56ce" />
+  <Project Path="LDCC.Models/LDCC.Models.csproj" Id="6567d53e-b6f1-457a-91f3-f86ba61f89cd" />
+  <Project Path="LDCC.Repository/LDCC.Repository.csproj" Id="a614d1ad-c940-4e1d-9836-f9ca72bdf45e" />
+  <Project Path="LDCC.Services/LDCC.Services.csproj" Id="9ede0fef-273e-49c5-82b1-64dd63b7f047" />
+</Solution>
