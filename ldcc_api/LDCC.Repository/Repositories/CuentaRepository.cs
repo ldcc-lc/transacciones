@@ -21,7 +21,7 @@ public class CuentaRepository : ICuentaRepository
 
         DataTable dataTable =
             await _databaseManager.ExecuteStoredProcedureReturningDataAsync(
-                "dbo.usp_Cuenta_ObtenerSaldos",
+                "dbo.usp_Cuenta_obtener_saldos",
                 parameters);
 
         var cuentas = new List<SaldoCuentaDto>();
@@ -30,11 +30,14 @@ public class CuentaRepository : ICuentaRepository
         {
             var cuenta = new SaldoCuentaDto
             {
+                Id = Convert.ToInt32(row["Id"]),
+                IdMoneda = Convert.ToInt32(row["IdMoneda"]),
                 NumeroCuenta = Convert.ToString(row["NumeroCuenta"]) ?? string.Empty,
                 TipoCuenta = Convert.ToString(row["TipoCuenta"]) ?? string.Empty,
                 Nombre = Convert.ToString(row["Nombre"]) ?? string.Empty,
                 Saldo = Convert.ToDecimal(row["Saldo"]),
                 CodigoMoneda = Convert.ToString(row["CodigoMoneda"]) ?? string.Empty,
+                NombreMoneda = Convert.ToString(row["NombreMoneda"]) ?? string.Empty,
                 FechaCreacion = Convert.ToDateTime(row["FechaCreacion"])
             };
 
